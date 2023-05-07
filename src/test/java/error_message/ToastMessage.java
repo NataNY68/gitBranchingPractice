@@ -25,6 +25,12 @@ public class ToastMessage {
         desiredCapabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Nataliia");
         desiredCapabilities.setCapability(MobileCapabilityType.APP, ecomApk.getAbsolutePath());
 
+
+
+
+
+
+
         URL serverUrl = new URL("http://0.0.0.0:4723/wd/hub");
         AndroidDriver driver = new AndroidDriver<>(serverUrl ,desiredCapabilities);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.MINUTES);
